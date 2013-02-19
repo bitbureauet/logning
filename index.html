@@ -28,15 +28,24 @@
         text-align: center;
       }
       .jumbotron h1 {
-        font-size: 40px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
+        font-size: 30 px;
+        padding-bottom: 15px;
       }
 
-      /* Supporting marketing content */
+      .jumbotron .text{
+        font-size: 25px;
+        line-height: 120%;
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+
+      .star a {
+        font-size: 40px;
+        text-decoration: none;
+      }
+
       .marketing {
         margin: 60px 0;
       }
@@ -51,10 +60,31 @@
         border-radius: 10px;
       }
 
+
+      .hvad {
+        position: relative;
+      }
+
+      .hvad span {
+        position: absolute;
+        left: 35px;
+      }
+
+      .hvad i .icon-large {
+        display: inline-block;
+        width: 28px;
+        text-align: center;
+      }
+
+      sup a {
+         cursor: help; 
+         text-decoration: none !important;
+      }
+
     </style>
     
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="favicon.png">
 
@@ -65,13 +95,14 @@
     <div class="container-narrow">
 
 
+
       <div class="jumbotron">
 
-        <h1>Cleaver intro</h1>
+        <h1>I Danmark registeres</h1>
 
-        <div id="counter"></div>
+        <div id="counter"></div> <span class="star"><a href="#" data-target="#modal-item" data-toggle="modal">*</a></span>
 
-        <h2>oplysninger om hvem du ringer og sms'er med, hvem du emailer med</h2>
+        <div class="text">oplysninger årligt, om hvem vi <b>ringer og SMS'er</b> med, hvem vi <b>emailer</b> med, hvilke <b>hjemmesider</b> vi besøger og <b>hvor vi er</b>, når vi gør det.</div>
 
         
       </div>
@@ -79,26 +110,74 @@
       <hr>
 
       <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+        <div class="span6 hvad">
+          <h4>Hvad registeres?</h4>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <p><i class="icon-phone icon-large"></i>        <span>Hvem du ringer til og hvem der ringer til dig.</span></p>
+          <p><i class="icon-envelope-alt icon-large"></i> <span>Hvem du SMS'er og emailer med.</span></p>
+          <p><i class="icon-laptop icon-large"></i>       <span>Hvad du laver på internettet.</span></p>
+          <p><i class="icon-globe icon-large"></i>        <span>Hvor du er, når du gør det.</span></p>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <br />
+          
+          <p>
+            Langt størstedelen af de over 1 billion<sup><a href="#" title="1.000.000.000.000 (12-nuller!)">*</a></sup> logninger,
+            registeres på baggrund hvad vi foretager os på internettet. 
+          </p>
+
+          <div style="text-align: center"><img src="img/90pct.png" style="width: 80px;"/></div>
+
+          <br />
+          
+          <p>
+            Internetlogningen kaldes også for <i>sessionslogning</i> og udgør i dag mindst <b>90%</b> af det samlede antal registeringer. 
+            En andel der må forventes at stige i fremtiden. 
+          </p>
+
+          <div style="text-align: center; font-size: 80px; height: 80px; top: 25px; position: relative"><b>1</b></div>
+
+          <p>
+            Til dato har Justistministeriet kun kunne finde <i>et eksempel</i>, hvor Politiet har haft gavn af sessionslogningen, i en sag om netbanksindbrud.
+          </p>
+
+
+
         </div>
 
         <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4>Hvorfor vi registerer?</h4>
+          
+          <p>
+            Logningen af tele- og internetdata blev indført i Danmark efter den såkaldte Terrorpakke II. 
+          </p>
+          
+          <p>
+            Det er den såkaldte Logningsbekendtgørelse som fastlægger i hvilket omfang teleudbyderne skal registerere deres kunders trafik.
+          </p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <p>
+            Bekendtgørelsen er den danske implementation af EU's Data Retention Directive, 
+            men på flere punkter skal der registeres langt flere informationer end hvad EU kræver.
+          </p>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <p>
+            Et eksempel på overimplementing i bekendtgørelsen er sessionslogningen, som ikke er omtalt i EU-direktivet, 
+            men derimod har været et ønske fra Justistministeren siden 1999. 
+          </p>
+
+          <h4>Revision nu!</h4>
+
+          <p>
+            Justistminsteren forsøger i øjeblikket at sylte en revision af logningsbekendtgørelsen frem til 2015.
+            Revisionen har været udskudt af flere omgange, fordi ministeren mener at vi bør vente på at EU har evalueret direktivet.
+          </p>
+
+          <p>
+            Den massive overvågning af borgerne, særligt på internettet, viser dog at der er brug for en revision af lovgivningen nu.
+            Især set i lyset af at Politiet ikke har brugt sessionslogningen til noget.
+          </p>
+
+
         </div>
       </div>
 
@@ -108,6 +187,46 @@
         <p style="float:left">Et projekt fra <a href="https://www.bitbureauet.dk/">Bitbureauet</a></p>
         <p style="float:right"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></p>
       </div>
+
+    </div>
+
+
+    <div class="modal hide" id="modal-item">
+
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">x</button>
+          <h3>Modelinformation</h3>
+      </div>
+
+      <div class="modal-body">
+          <p>Tælleren viser det estimerede antal registeringer de danske teleselskaber har måtte foretage på baggrund af logningsbekendtgørelsen.</p>
+          <p>Tallet er baseret på en model over udviklingen af internet og teletrafik. Årsagen til at antallet vokser hurtigt er grundet væksten i internettrafik.</p>
+          <p>Modellen benytter sig af kun tre datapunkter, så der må forventes en vis usikkerhed. Følgende tal er benyttet:</p>
+          <table width="100%">
+            <th>
+              <tr>
+                <td><b>År</b></td>
+                <td><b>Antal</b></td>
+              </tr>
+            </th>
+            <tr>
+              <td>2008</td>
+              <td>450 mia registeringer</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>550 mia registeringer</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>900 mia registeringer</td>
+            </tr>
+
+          </table>
+          <p>
+      </div>
+
+
 
     </div>
 
